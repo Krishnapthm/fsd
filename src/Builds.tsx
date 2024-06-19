@@ -4,14 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Home from "./Home";
 
-function App() {
+function Builds() {
   const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <Home/>
-    </>
-  );
+  return <>Builds page</>;
 }
 
-export default App;
+export default Builds;
