@@ -4,19 +4,8 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
 
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -91,10 +80,6 @@ function Home() {
       quantity: number;
     }[]
   >([]);
-
-  const handleSelectPart = (part: Parts) => {
-    setSelectedPart(part);
-  };
 
   const handleAddToCart = (brandSpec: BrandSpec) => {
     if (selectedPart) {

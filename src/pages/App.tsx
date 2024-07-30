@@ -1,23 +1,17 @@
-import React from "react";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Builds from "./Builds";
 import Stores from "./Stores";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../components/ui/navigation-menu";
 import { ModeToggle } from "@/components/ui/mood-toggle";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
       <div>
